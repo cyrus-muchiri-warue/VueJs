@@ -6,7 +6,8 @@ $var = new Vue(
             last: 'muchiri',
             age: 20,
             link: "https://google.com",
-            attributeName:"href"
+            attributeName: "href",
+            isActive:"true"
         },
         methods: {
             addAge: function (params) {

@@ -28,8 +28,10 @@
            <button type="submit" v-on:click="age--">decriment Age{{age}}</button>
 
            <!--dynamic attribute-->
-           <a v-bind:[attributeName]="link"> click here to vist google </a>
            
+           <br>
+           <h1>binding html classes</h1>
+           <div v-bind:class="{ active: isActive }">hello world</div>
 
            
 
