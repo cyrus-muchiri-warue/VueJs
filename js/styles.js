@@ -1,3 +1,19 @@
+Vue.component('example',
+    {
+    
+    template: '<p  v-on:click="changeName">my name is {{name}}</p> ',
+    data: function () {
+        return {
+          name: "cyrus"
+        }
+      },
+    methods: {
+        changeName:function() {
+            this.name = "muchiri";
+         }
+    }
+});
+
 $var = new Vue(
     {
         el: "#wrapper",
