@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,6 +12,27 @@
           <p>age {{age}}</p>
           <p >{{addAge(1)}}</p>
           <p>{{subtractAge(2)}}</p>
+         
+         <!--binding a href attributes-->
+          <a v-bind:href="link">click here to vist google</a>
+          <br>
+          <!--bind input value attribute-->
+          <input type="text" v-bind:value="first">
+           <!--bind 2-way value attribute-->
+           <input type="text" v-model:value="last">{{last}}
+           <!--bind  css class value attribute-->
+           <input type="button" value="submit" class="btn btn-success">
+           <!--mouse events-->
+           <button type="submit" v-on:click="age++">incriment Age{{age}}</button>
+           <!--shorthand mouse events-->
+           <button type="submit" v-on:click="age--">decriment Age{{age}}</button>
+
+           <!--dynamic attribute-->
+           <a v-bind:[attributeName]="link"> click here to vist google </a>
+           
+
+           
+
     </div>
   <script src="js/styles.js"></script>  
 </body>

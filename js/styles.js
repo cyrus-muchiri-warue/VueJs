@@ -4,7 +4,9 @@ $var = new Vue(
         data: {
           first:'cyrus',  
             last: 'muchiri',
-            age:20
+            age: 20,
+            link: "https://google.com",
+            attributeName:"href"
         },
         methods: {
             addAge: function (params) {
